@@ -1,0 +1,16 @@
+= Metanorma IEEE Models
+
+This is where we keep the Metanorma IEEE model definitions.
+
+The IEEE Standard Document format is an instance of the
+https://github.com/metanorma/metanorma-model-standoc[Metanorma StandardDocument model].
+Details of the general model can be found on its page.
+
+== IEEE Standard Document Model
+
+image::images/IeeeStandardDocument.png[]
+
+== IEEE Bibliographic Item Model
+
+image::images/IeeeBibliographicItem.png[]
+
