@@ -1,0 +1,35 @@
+diagram IeeeBibliographicItem {
+  
+  
+  
+  class IsoBibliographicItem <<Bibliography>> {
+  
+  }
+  
+  class IeeeBibliographicItem{
+    +scope: LocalizedString[0..1]
+    +purpose: LocalizedString[0..1]
+    +iee_version: IeeeVersion[0..*]
+  }
+  
+  class IeeeVersion{
+    +date: Date
+    +status: DocumentStatus
+    +id: DocumentId
+    +uri: TypedUri
+  }
+  
+  
+  association {
+    owner IsoBibliographicItem
+    member IeeeBibliographicItem
+    owner_type inheritance
+  }
+  
+  association {
+    owner IeeeBibliographicItem
+    member IeeeVersion
+    owner_type direct
+  }
+  
+}

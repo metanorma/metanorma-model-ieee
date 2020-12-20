@@ -1,0 +1,47 @@
+diagram IeeeStandardDocument {
+  
+  
+  class StandardDocument <<StandardDocument>> {
+  
+  }
+  
+  class IeeeStandardDocument {
+    +bibdata: IeeeBibliographicItem
+    +prefix: IeeePreface
+    +sections: ClauseSection[1..*]
+    +annex: AnnexSection[0..*]
+    +termSources: <<Bibliography>> Citation[0..*]
+  }
+  
+  class IeeePreface{
+    +foreword: BasicSection
+    +introduction: ClauseSection[0..1]
+  }
+  
+  class AnnexSection <<StandardDocument>>{
+  
+  }
+  
+  class IeeeAnnexSection{
+    +appendix: ClauseSection[0..*]
+  }
+  
+  
+  association {
+    owner StandardDocument
+    member IeeeStandardDocument
+    owner_type inheritance
+  }
+  association {
+    owner IeeeStandardDocument
+    member IeeePreface
+    owner_type direct
+  }
+  
+  association {
+    owner AnnexSection
+    member IeeeAnnexSection
+    owner_type inheritance
+  }
+  
+}
