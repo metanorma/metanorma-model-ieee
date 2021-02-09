@@ -8,9 +8,9 @@ Details of the general model can be found on its page.
 
 == IEEE Standard Document Model
 
-image::images/IeeeStandardDocument.png[]
+image::images/IeeeDoc_IeeeStandardDocument.png[]
 
 == IEEE Bibliographic Item Model
 
-image::images/IeeeBibliographicItem.png[]
+image::images/IeeeDoc_IeeeBibliographicItem.png[]
 
