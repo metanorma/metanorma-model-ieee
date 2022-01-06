@@ -1,5 +1,7 @@
 = Metanorma IEEE Models
 
+image:https://github.com/metanorma/metanorma-model-ieee/workflows/make/badge.svg["Build Status", link="https://github.com/metanorma/metanorma-model-ieee/actions/workflows/make.yml"]
+
 This is where we keep the Metanorma IEEE model definitions.
 
 The IEEE Standard Document format is an instance of the
