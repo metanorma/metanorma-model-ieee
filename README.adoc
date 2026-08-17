@@ -1,18 +1,9 @@
-= Metanorma IEEE Models
+# This repository has been consolidated
 
-image:https://github.com/metanorma/metanorma-model-ieee/workflows/make/badge.svg["Build Status", link="https://github.com/metanorma/metanorma-model-ieee/actions/workflows/make.yml"]
+This repository is now part of **[metanorma/standoc-models](https://github.com/metanorma/standoc-models)** — the consolidated monorepo for the Metanorma document models (Basicdoc + Standoc + all flavours), per [metanorma-core#16](https://github.com/metanorma/metanorma-core/issues/16).
 
-This is where we keep the Metanorma IEEE model definitions.
+- Grammar sources and builds live in [`standoc-models/grammars/`](https://github.com/metanorma/standoc-models/tree/main/grammars).
+- This repository's full commit history is preserved there (imported via `git filter-repo --to-subdirectory-filter`).
+- Open issues were transferred to `standoc-models`; this repository's issue and PR history remains readable.
 
-The IEEE Standard Document format is an instance of the
-https://github.com/metanorma/metanorma-model-standoc[Metanorma StandardDocument model].
-Details of the general model can be found on its page.
-
-== IEEE Standard Document Model
-
-image::images/IeeeDoc_IeeeStandardDocument.png[]
-
-== IEEE Bibliographic Item Model
-
-image::images/IeeeDoc_IeeeBibliographicItem.png[]
-
+This repository is archived read-only. All new work happens in `standoc-models`.
